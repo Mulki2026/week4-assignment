@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpendWise Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">S</div>
+        <span>SpendWise</span>
+      </div>
+
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="#" class="nav-item active">
+          <span>📊</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>💳</span>
+          <span>Transactions</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>📈</span>
+          <span>Analytics</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>🎯</span>
+          <span>Budgets</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>⚙️</span>
+          <span>Settings</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <p>Monthly budget</p>
+        <strong>$2,450</strong>
+        <div class="progress">
+          <div class="progress-bar"></div>
+        </div>
+        <small>68% used</small>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="header-title">
+          <p class="greeting">Good morning, Alex 👋</p>
+          <h1>Financial Overview</h1>
+        </div>
+
+        <div class="header-actions">
+          <button class="icon-button" aria-label="Notifications">
+            🔔
+          </button>
+
+          <div class="profile">
+            <div class="avatar">A</div>
+            <div>
+              <strong>Alex Morgan</strong>
+              <small>Personal account</small>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Summary -->
+      <section class="summary">
+        <div class="summary-card">
+          <span>Total balance</span>
+          <strong>$8,420.50</strong>
+          <small class="positive">↑ 8.4% this month</small>
+        </div>
+
+        <div class="summary-card">
+          <span>Monthly spending</span>
+          <strong>$1,672.35</strong>
+          <small>of $2,450 budget</small>
+        </div>
+
+        <div class="summary-card">
+          <span>Total savings</span>
+          <strong>$4,280.00</strong>
+          <small class="positive">↑ $320 this month</small>
+        </div>
+      </section>
+
+      <!-- Category Cards -->
+      <section class="categories">
+        <div class="section-heading">
+          <div>
+            <p>Spending breakdown</p>
+            <h2>This month's categories</h2>
+          </div>
+          <button class="view-button">View details →</button>
+        </div>
+
+        <div class="card-grid">
+
+          <article class="category-card" tabindex="0">
+            <div class="card-top">
+              <div class="category-icon food">🍔</div>
+              <span class="percentage">18%</span>
+            </div>
+            <div class="card-content">
+              <h3>Food</h3>
+              <strong>$302.45</strong>
+              <p>of $450 budget</p>
+            </div>
+            <div class="card-progress">
+              <div class="bar food-bar"></div>
+            </div>
+          </article>
+
+          <article class="category-card" tabindex="0">
+            <div class="card-top">
+              <div class="category-icon transport">🚗</div>
+              <span class="percentage">9%</span>
+            </div>
+            <div class="card-content">
+              <h3>Transport</h3>
+              <strong>$151.20</strong>
+              <p>of $250 budget</p>
+            </div>
+            <div class="card-progress">
+              <div class="bar transport-bar"></div>
+            </div>
+          </article>
+
+          <article class="category-card" tabindex="0">
+            <div class="card-top">
+              <div class="category-icon rent">🏠</div>
+              <span class="percentage">42%</span>
+            </div>
+            <div class="card-content">
+              <h3>Rent</h3>
+              <strong>$700.00</strong>
+              <p>of $700 budget</p>
+            </div>
+            <div class="card-progress">
+              <div class="bar rent-bar"></div>
+            </div>
+          </article>
+
+          <article class="category-card" tabindex="0">
+            <div class="card-top">
+              <div class="category-icon entertainment">🎬</div>
+              <span class="percentage">7%</span>
+            </div>
+            <div class="card-content">
+              <h3>Entertainment</h3>
+              <strong>$118.70</strong>
+              <p>of $200 budget</p>
+            </div>
+            <div class="card-progress">
+              <div class="bar entertainment-bar"></div>
+            </div>
+          </article>
+
+          <article class="category-card" tabindex="0">
+            <div class="card-top">
+              <div class="category-icon savings">💰</div>
+              <span class="percentage">16%</span>
+            </div>
+            <div class="card-content">
+              <h3>Savings</h3>
+              <strong>$320.00</strong>
+              <p>of $500 goal</p>
+            </div>
+            <div class="card-progress">
+              <div class="bar savings-bar"></div>
+            </div>
+          </article>
+
+          <article class="category-card" tabindex="0">
+            <div class="card-top">
+              <div class="category-icon utilities">💡</div>
+              <span class="percentage">8%</span>
+            </div>
+            <div class="card-content">
+              <h3>Utilities</h3>
+              <strong>$132.00</strong>
+              <p>of $180 budget</p>
+            </div>
+            <div class="card-progress">
+              <div class="bar utilities-bar"></div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
